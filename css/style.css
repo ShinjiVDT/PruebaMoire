@@ -1,0 +1,86 @@
+body {
+  margin: 0; }
+
+.spacer {
+  height: 200px;
+  width: 100px; }
+
+.display {
+  position: relative;
+  width: 100%; }
+  .display .cover {
+    position: absolute;
+    width: 70%;
+    height: 30%;
+    z-index: 9999;
+    background-image: linear-gradient(90deg, #000 0%, #000 85%, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0) 100%);
+    background-size: 1.55%;
+    background-position: -2px 0; }
+  .display .shade {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply; }
+  .display img {
+    display: block;
+    margin: 0 auto; }
+
+.cat .shade {
+  background-color: #FFF960; }
+
+.cat img {
+  width: 60%;
+  height: auto; }
+
+.bike .shade {
+  background-color: #47FFBB; }
+
+.bike img {
+  width: 60%;
+  height: auto; }
+
+.ufo .shade {
+  background-color: #BFFFF3; }
+
+.ufo img {
+  width: 60%;
+  height: auto; }
+
+/*----*/
+.wrapper__touch {
+  width: 800px;
+  height: 500px;
+  background-color: red;
+  overflow: hidden; }
+
+.box1 {
+  height: 150px;
+  width: 150px;
+  background-color: blue; }
+
+.display3 {
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+  .display3 .cover3 {
+    position: absolute;
+    width: 70%;
+    height: 30%;
+    z-index: 9999;
+    background-image: linear-gradient(90deg, #000 0%, #000 85%, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0) 100%);
+    background-size: 1.55%;
+    background-position: -2px 0; }
+
+.spacer3 {
+  height: 800px;
+  width: 100px; }
+
+@media (max-width: 740px) {
+  .display3 .cover3 {
+    background-size: 1.56%;
+    background-position: 0px 0; }
+  .cat .shade {
+    background-color: #a26b9b; }
+  .cat img {
+    width: 60%;
+    height: auto; } }

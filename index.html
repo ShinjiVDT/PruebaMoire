@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="spacer">
+        <a href="./prueba2.html">prueba2</a>
+        <a href="./prueba3.html">prueba3</a>
+    </div>
+    <div class="display" id="objetivo" onmouseover="siguerratones.display = 'block'"
+        onmouseout="siguerratones.display = 'none'" onmousemove="seguir()">
+        <div class="cover" id="siguerratones"></div>
+        <div class="display cat">
+
+            <div class="shade"></div>
+            <img src="https://i.imgbox.com/SLb7y4Xj.png" />
+        </div>
+        <div class="display bike">
+
+            <div class="shade"></div>
+            <img src="https://i.imgbox.com/AEpoF7IJ.png" />
+        </div>
+        <div class="display ufo">
+
+            <div class="shade"></div>
+            <img src="https://i.imgbox.com/w4XaysTD.png" />
+        </div>
+    </div>
+    <div class="spacer">
+        aa
+    </div>
+
+
+    <script>
+        var siguerratones = document.getElementById('siguerratones').style;
+
+        function seguir() {
+            siguerratones.top = parseInt(window.event.pageY - 200) + "px";
+            siguerratones.left = parseInt(window.event.pageX - 400) + "px";
+        }
+
+
+
+
+        function preview() {
+            previewCount += 1;
+            previewCount %= 100;
+            bgPos = -previewCount + 'px 0';
+        }
+
+        var previewInterval = window.setInterval(preview, 50);
+
+        $('body').on('mousemove', function (e) {
+
+            if (previewInterval !== 0) window.clearInterval(previewInterval);
+
+        });
+
+
+    </script>
+</body>
+
+</html>
